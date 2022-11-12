@@ -18,3 +18,6 @@
 ・主な利用シーン：どのような時に使うのか
     好きなアーティストのライブが終わって余韻に浸りたい時
     自分が行ったライブを思い出したい時
+    
+・実装機能リストのURLの記載
+    https://docs.google.com/spreadsheets/d/12EtmKyQOiJwdomyOFIBhfVyBQpXQS4a2Lxy4Vzok7_c/edit?usp=sharing
