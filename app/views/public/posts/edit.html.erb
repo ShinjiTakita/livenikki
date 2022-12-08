@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row pb-3">
+    <h3 style="background-color: silver;">投稿編集</h3>
+  </div>
+
+  <%= form_with model: @post, url: post_path, method: :patch, local:true do |f| %>
+    <div class="row pb-3">
+      <div class="col-2"></div>
+      <div class="col-2">投稿画像</div>
+      <div class="col-4"><%= f.file_field :images, multiple: true %></div>
+    </div>
+
+    <div class="row pb-3">
+      <div class="col-2"></div>
+      <div class="col-2">タイトル</div>
+      <div class="col-4"><%= f.text_field :title %></div>
+    </div>
+
+    <div class="row pb-3">
+      <div class="col-2"></div>
+      <div class="col-2">感想</div>
+      <div class="col-4"><%= f.text_area :body %></div>
+    </div>
+
+    <div class="row pb-3">
+      <div class="col-2"></div>
+      <div class="col-2">セットリスト</div>
+      <div class="col-4"><%= f.text_area :setlist %></div>
+    </div>
+
+    <div class="row pb-3">
+      <div class="col-2"></div>
+      <div class="col-2">タグ</div>
+      <div class="col-4"><%= f.collection_select :tag_id, Tag.all, :id, :name, include_blank: " 選択してください" %></div>
+    </div>
+
+    <div class="row pb-3">
+      <div class="col-2"></div>
+      <div class="col-2">会場</div>
+      <div class="col-4"><%= f.text_field :venue %></div>
+    </div>
+
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4"><%= f.submit '変更を保存', class: "btn btn-success" %></div>
+      <div class="col-4"></div>
+    </div>
+
+  <% end %>
+</div>

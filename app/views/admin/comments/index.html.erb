@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <h4 style="background-color: silver;">コメント一覧</h4>
+  </div>
+
+    <table>
+        <thead>
+            <th class="border col-3", style="background-color: silver;">コメントID</th>
+            <th class="border col-3", style="background-color: silver;">投稿者</th>
+            <th class="border col-3", style="background-color: silver;">投稿日時</th>
+            <th class="border col-3", style="background-color: silver;">コメント</th>
+        </thead>
+        <tbody>
+  <% @comments.each do |comment| %>
+          <tr>
+            <td><%= comment.id %></td>
+            <td>
+              <%= (comment.customer.last_name + " " + comment.customer.first_name)  %>
+            </td>
+            <td><%= comment.created_at.strftime('%Y/%m/%d') %></td>
+            <td><%= comment.comment %></td>
+            <td><%= link_to "削除", admin_comment_path(comment), method: :delete, class: "btn btn-danger" %></td>
+          </tr>
+  <% end %>
+        </tbody>
+      </table>
+</div>
