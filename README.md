@@ -1,24 +1,47 @@
-# README
+# Live日記
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## サイト概要
+### サイトテーマ
+いつでも自分が行ったライブの思い出に浸れるコミュニティサイト
 
-* Ruby version
 
-* System dependencies
+### テーマを選んだ理由
+ライブに行った時の思い出、感想を共有したり、その時に食べたご飯などを簡単に思い返せることをテーマにしています。
 
-* Configuration
+某呟きのアプリで、セットリストやご飯などを共有している人をよく見かけますが、自分が過去に呟いた内容は探すのに時間がかかります。
+このサイトを使うことによって行ったライブを一元管理でき、キーワードなどで検索がかけられるためすぐに思い出のライブに浸ることができます。
 
-* Database creation
+数個のサイトやアプリを使用してセットリストや写真をまとめる手間を無くすことができるサービスを想定しました。
 
-* Database initialization
 
-* How to run the test suite
+### ターゲットユーザー
+- ライブが好きな人
+- ライブ初心者
+- ライブに行った先で観光する方
+- ライブに行った時のご飯にこだわりのある方（ライブの後のラーメンは定番）
+- ライブの思い出を共有したい方
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+### 主な利用シーン
+- 好きなアーティストのライブが終わって余韻に浸りたい時
+- ライブの思い出、感想を共有したい時
+- 自分が行ったライブを思い出したい時
+- ライブ会場周辺のご飯屋を知りたい時
 
-* ...
+
+## 設計書
+
+実装機能リストのURL
+https://docs.google.com/spreadsheets/d/12EtmKyQOiJwdomyOFIBhfVyBQpXQS4a2Lxy4Vzok7_c/edit?usp=sharing
+
+
+## 開発環境
+- OS：Linux(CentOS)
+- 言語：HTML,CSS,JavaScript,Ruby,SQL
+- フレームワーク：Ruby on Rails
+- JSライブラリ：jQuery
+- IDE：Cloud9
+
+## 使用素材
+使用検討中です
