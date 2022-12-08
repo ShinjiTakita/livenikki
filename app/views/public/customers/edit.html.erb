@@ -2,6 +2,13 @@
   <div class="row pb-3">
     <h4 style="background-color: silver;">会員情報編集</h4>
   </div>
+  <% if @customer.errors.any? %>
+    <ul>
+      <% @customer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
     <%= form_with model: @customer, url: infomation_path, method: :patch, local:true do |f| %>
 
     <div class="row pb-3">

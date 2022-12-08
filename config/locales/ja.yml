@@ -4,10 +4,23 @@ ja:
     models:
       post: 投稿
       tag: タグ
+      customer:
     attributes:
       post:
         images: 画像
+        title: タイトル
+        body: 感想
+        setlist: セットリスト
+        venue: 会場
         tag: タグ
+      customer:
+        email: メールアドレス
+        password: パスワード
+        last_name: 性
+        first_name: 名
+        last_name_kana: セイ
+        first_name_kana: メイ
+        telephone_number: 電話番号
     errors:
       messages:
         record_invalid: 'バリデーションに失敗しました: %{errors}'

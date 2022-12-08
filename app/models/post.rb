@@ -2,6 +2,10 @@ class Post < ApplicationRecord
   has_many_attached :images
 
   validates :images, presence: true
+  validates :title, presence: true
+  validates :body, presence: true
+  validates :setlist, presence: true
+  validates :venue, presence: true
 
   belongs_to :customer
   has_many :comments, dependent: :destroy
